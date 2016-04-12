@@ -1,4 +1,4 @@
-document.getElementById("age").addEventListener('click', function(){
+document.getElementById("age").addEventListener('', function(){
     document.getElementById("age").innerHTML=24;
 });
 
@@ -14,5 +14,27 @@ document.querySelector("button").addEventListener('click', function(){
     document.body.style.backgroundColor="dodgerblue"});
     
 document.getElementById("height").addEventListener('click', function(){
-    document.getElementById("height").innerHTML= "wow"
+    document.getElementById("height").innerHTML= "too fast"
 })
+
+function change(){
+    var x = document.getElementById("age");
+    x.value = x.value.toUpperCase();
+}
+
+function profile(){
+    document.getElementById("use").innerHTML="Worked!"
+}
+document.querySelector("img").addEventListener("click", profile);
+
+function screenSize(){
+    var x= window.outerWidth;
+    var y= window.outerHeight;
+    var size="Width:"+ x + "height: " + y;
+    document.getElementById("comeOn").addEventListener('click',function() {
+    document.getElementById("comeOn").innerHTML=size});
+    return size;
+}
+
+//why is it not dynamic and changing?
+document.write(screenSize());

@@ -3,18 +3,18 @@
     <head>
         <title>Edit in Place</title>
     </head>
-    <body>
-        <h1>User Profile</h1>
-            <p id="comeOn">Jeffrey Bradley</p>
+    <body onresize="screenSize()">
+        <h1 id = "use">User Profile</h1>
+            <p id="comeOn">Jeffrey Bradley (RESIZE THE SCREEN)</p>
             <div id="please">
-                <img src="http://placehold.it/350x150">
+                <img src="http://placehold.it/500x150">
             </div>
             <ul>
-                <li>Age:</li>
-                <div id="age">
-                    <input type="text" name=""/>
+                <li>Vacation Spot:</li>
+                <div >
+                    <input type="text" value="Enter Value" id="age" onchange="change()"/>
                 </div>
-                <li>Height:</li>
+                <li>Television Shows:</li>
                 <div id = "height"> 
                     <input type= "text">
                 </div>
